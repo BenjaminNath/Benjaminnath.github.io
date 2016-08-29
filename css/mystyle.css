@@ -1014,9 +1014,6 @@ footer p {
   padding: 0;
   background: #fff;
   overflow: hidden;
-  border-style: solid;
-  border-color: #000;
-  border-width: 1px;
 }
 .hover:hover img{
   opacity: .5;
