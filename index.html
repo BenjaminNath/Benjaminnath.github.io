@@ -40,10 +40,10 @@
       <span><!-- --></span>
       <span><!-- --></span>
         <ul id="menu">
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about" id="goAbout">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
-	  <li><a href="https://drive.google.com/file/d/0B362pzEadJUsVjZCMk5EeVMwTHM/view?usp=sharing">Resume</a><!-- --><li>
+	        <li><a href="https://drive.google.com/file/d/0B362pzEadJUsVjZCMk5EeVMwTHM/view?usp=sharing">Resume</a><!-- --><li>
         </ul>
     </div>
     <a class="navbar-right navbar-brand navHead" href="#title">
@@ -85,18 +85,32 @@
         <h2 class="tech-title">Projects</h2>
 	       <div class="container">
             <div class="row row-centered">
-              <div class="col-xs-6 col-centered">
+              <div class="col-xs-3 col-centered">
 		            <div class="hover">           
                   <img src="img/JessieGames.png" class="img-responsive img-thumbnail">
                   <span>The Jessie Games</span>
                   <span class="projDescription">Implmented and maintained on WordPress</span>
                 </div>
               </div>
-              <div class="col-xs-6 col-centered">
+              <div class="col-xs-3 col-centered">
                 <div class="hover">
                   <a href="weatherApp.html"><img src="img/weatherApp.png" class="img-responsive img-thumbnail"></a>
                   <span>Local Weather</span>
-                  <span class="projDescription">Using OpenWeather's API, gets geolocation and displays the current weather for your location</span>
+                  <span class="projDescription">Using OpenWeather's API, gets geolocation and displays the current weather for your location. (May not work in Chrome)</span>
+                </div>        
+              </div>
+              <div class="col-xs-3 col-centered">
+                <div class="hover">
+                  <a href="wiki.html"><img src="img/wiki.png" class="img-responsive img-thumbnail"></a>
+                  <span>Wikipedia Viewer</span>
+                  <span class="projDescription">Using Wikipedia's Api &amp opensearch function, you can search wikipedia with the search bar to show related results.</span>
+                </div>        
+              </div>
+              <div class="col-xs-3 col-centered">
+                <div class="hover">
+                  <a href="calculator.html"><img src="img/calc.png" class="img-responsive img-thumbnail"></a>
+                  <span>Calculator</span>
+                  <span class="projDescription">Four function calculator built with jQuery and Math.js</span>
                 </div>        
               </div>
             </div>
@@ -119,12 +133,12 @@
         <h5>Made by Benjamin Nath</h5>
       </div>
     </footer>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="script/bootstrap-off-canvas-nav.js"></script>
-    <script type="text/javascript" src="script/custJS.js"></script>
-    <script type="text/javascript" src="script/jquery.easing.min.js"></script>
     
+
+    <script src="script/myScript.js"></script>
+    <script type="text/javascript" src="script/bootstrap-off-canvas-nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </body>
 
 </html>

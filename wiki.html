@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta chatset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="author" content="Ben Nath">
+
+    <title>Wiki Viewer</title>
+      
+      <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/wiki.css">
+
+
+    <!-- Icons -->
+    <link rel="icon" href="icons/Weblogo.ico">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="center" id="top">
+      <p><a href="https://en.wikipedia.org/wiki/Special:Random" class="random">Take me to a random Wiki Page</a></p>
+      <input id="searchInput" placeholder="Search">
+      <button class="btn btn-primary" id="search">Go!</button>
+      <p class="searchWiki">Hit enter to search Wikipedia</p>
+    </div>
+    <div class="bottom container">
+      <ul id="results"></ul>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="script/wiki.js"></script>
+  </body>

@@ -993,7 +993,7 @@ footer p {
   z-index: -1;
   display: block;
   width: 300px;
-  margin: 0px 0px 0px 154px;
+  margin: 0px;
   color: #444;
   font-size: 18px;
   text-decoration: none;
@@ -1003,8 +1003,7 @@ footer p {
   opacity: 0;
 }
 .hover{
-  width: 54%;
-  margin-left: 25%;
+  width: 100%;
 }
 .hover img{
   opacity: 1;
@@ -1037,6 +1036,6 @@ figure:hover+span {
   opacity: 1;
 }
 .projDescription{
-  padding: 0px 0px 100px 0px;
+  padding: 0px 40px 75px;
   font-weight: bold;
 }

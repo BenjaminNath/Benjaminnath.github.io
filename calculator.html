@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta chatset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="author" content="Ben Nath">
+
+    <title>Calculator</title>
+      
+      <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+
+
+      <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Icons -->
+    <link rel="icon" href="icons/Weblogo.ico">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div id="calculator">
+      <div class="col-xs-4 col-xs-offset-5">
+        <div class="outline">
+          <div id="screen" class="text-right">
+            <p id="answer">0</p>
+          </div> <!-- End Screen -->
+          <div class="keys">
+            <button class="btn btn-danger" value='C'>C</button>
+            <button class="btn btn-danger" value='CE'>CE</button>
+            <button class="btn btn-warning"value='/'>&divide</button>
+            <button class="btn btn-warning"value='*'>&times</button>
+
+            <button class="btn btn-default"value='7'>7</button>
+            <button class="btn btn-default"value='8'>8</button>
+            <button class="btn btn-default"value='9'>9</button>
+            <button class="btn btn-warning"value='-'>-</button>
+
+            <button class="btn btn-default"value='4'>4</button>
+            <button class="btn btn-default"value='5'>5</button>
+            <button class="btn btn-default"value='6'>6</button>
+            <button class="btn btn-warning"value='+'>+</button>
+
+            <button class="btn btn-default"value='1'>1</button>
+            <button class="btn btn-default"value='2'>2</button>
+            <button class="btn btn-default"value='3'>3</button>
+            <button class="btn btn-success btnEq"value='='>=</button>
+
+            <button class="btn btn-default btn0"value='0'>0</button>
+            <button class="btn btn-default"value='.'>.</button>
+
+          </div> <!-- End Keys --> 
+        </div> <!-- End Outline -->
+        
+        <div class="footer">
+          <p>Designed & developed by <a href="https://benjaminnath.github.io">Benjamin Nath</a></p>
+        </div>
+      </div>
+    </div> <!-- End Calculator -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.4.1/math.min.js"></script>
+    <script src="script/calc.js"></script>
+  </body>
