@@ -1,0 +1,215 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300';
+
+#splashScreen{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  z-index: 9999;
+}
+#splashScreen a {
+  color: white;
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+#hello{
+  font-size: 3em;
+  top: 500px;
+  margin-top: 100px;
+}
+.site {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  color: #000;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+}
+p{
+  text-align: center;
+  font-size: 25px;
+  color: #DDF2EB;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+.separator{
+  overflow: hidden;
+  height: 20px;
+  width: 200px;
+}
+.separator:after{
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px black;
+}
+.bgimg {
+  background-image: url('../img/laptop.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    border-left: 2px solid #fff;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav .closebtn:hover{
+  border-left: none;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#toggleMenu{
+  background: transparent;
+  margin: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+.aboutHeader{
+  background-image: url('../img/landscape.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+.blackFont{
+  color: #333;
+}.whiteFont{
+  color: #fff;
+}
+.title{
+  float: left;
+  margin: 0 0 0 150px;
+}
+.project{
+  float: left;
+  margin: 50px;
+}
+.row{
+  margin-top: 100px;
+}
+.project img{
+  width: 275px;
+  height: 200px;
+}
+h2{
+  text-align: center;
+}
+.bg1{
+  background-color: #171738;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.project a{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #DFF3E4;
+}
+.project a:hover{
+  color: #fff;
+}
+.well{
+  background: none;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+.contactPage{
+  background-color: #102E4A;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.left{
+  margin-top: 200px;
+  margin-right: 50%;
+  float: left;
+}
+.right{
+  margin-top: 200px;
+  margin-left: 50%;
+  color: #fff;
+}
+.center{
+  text-align: center;
+  margin-top: 200px;
+  padding: 0px 250px;
+  font-size: 30px;
+}
+#portrait{
+  top: 0;
+  left: 50%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: left .5s;
+  z-index: -1;
+}
+#toggleMenu{
+  z-index: 100;
+}
+.text-center p{
+  margin: 30px 0px;
+}
