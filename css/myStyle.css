@@ -141,7 +141,7 @@ p{
   margin: 50px;
 }
 .row{
-  margin-top: 100px;
+  margin-top: 45px;
 }
 .project img{
   width: 275px;
@@ -212,4 +212,78 @@ h2{
 }
 .text-center p{
   margin: 30px 0px;
+}
+.desktop{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  margin: 100px 150px 0px 0px;
+}
+.mobile{
+  display: none;
+}
+
+@media only screen
+and (max-width : 360px) {
+  h1{
+    margin-top: 200px;
+    font-size: 40px;
+  }
+  h1.blackFont{
+    margin-top: 80px;
+    font-size: 35px;
+  }
+  h3{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #portrait{
+    display: none;
+  }
+  .col-xs-9{
+    width: 100%;
+  }
+  .col-xs-9 p{
+    font-size: 15px;
+    margin: 35px 0px;
+  }
+  .title{
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .center{
+    text-align: center;
+    margin: 200px 0px;
+    padding: 0;
+    font-size: 15px;
+  }
+  .project{
+    margin: 0px 15px;
+    padding: 0;
+    float: left;
+  }
+  .project img{
+    width: 125px;
+    height: 100px;
+  }
+  .project h2 {
+    font-size: 15px;
+  }
+  .well{
+    padding: 15px;
+    margin: 10px 0px;
+    font-size: 20px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin: 60px 25px;
+  }
+  .row{
+    margin-top: 85px;
+  }
 }
