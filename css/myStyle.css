@@ -139,6 +139,7 @@ p{
 .project{
   float: left;
   margin: 50px;
+  overflow: hidden;
 }
 .row{
   margin-top: 45px;
