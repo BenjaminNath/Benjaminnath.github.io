@@ -222,6 +222,13 @@ h2{
 .mobile{
   display: none;
 }
+#portbg{
+  background-color: #171738;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 
 @media only screen
 and (max-width : 415px) {
