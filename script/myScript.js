@@ -5,10 +5,11 @@ $('#enterSite').click(function(){
 $('#name').hide().delay(1000).fadeIn(2000);
 $('#occupation').hide().delay(3000).fadeIn(2000);
 
-$('#jgames').hide().fadeIn(2000);
-$('#weather').hide().delay(250).fadeIn(2000);
-$('#wikiviewer').hide().delay(500).fadeIn(2000);
-$('#calculator').hide().delay(750).fadeIn(2000);
+$('#wknd').hide().fadeIn(2000);
+$('#jgames').hide().delay(250).fadeIn(2000);
+$('#weather').hide().delay(500).fadeIn(2000);
+$('#wikiviewer').hide().delay(750).fadeIn(2000);
+$('#calculator').hide().delay(1000).fadeIn(2000);
 
 
 function openNav() {
