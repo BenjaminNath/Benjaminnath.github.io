@@ -1,4 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
+/* Variables */
+$iconBG: #343434;
+$icon: #DFDFDF;
+
+/* Mixins */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 *{
   margin: 0;
   padding: 0;
@@ -18,6 +29,8 @@ body{
   margin: 0 auto;
 }
 .text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
 .b-a {
   transition: all .25s;
   content: "";
@@ -118,6 +131,20 @@ h1 {
 p {
   line-height: 20px;
 }
+.bold{
+  font-weight: 1000;
+}
+.fa{
+  color: $icon;
+  background-color: $iconBG;
+  border-color: $iconBG;
+  @include border-radius(15%);
+  padding: 10px;
+  margin: 10px;
+}
+.row{
+  display: inline-block;
+}
 .intro{
   background: url(../img/laptop.jpg);
   background-size: cover;
@@ -126,9 +153,34 @@ p {
   height: 100%;
   color: #fff;
 }
+.title{
+  font-size: 50px;
+  line-height: 50px;
+  padding: 10px;
+}
+.slide{
+  background-color: #4C6663;
+  width: 100%;
+  height: 50%;
+}
+.break{
+  background: url(../img/code.jpeg);
+  background-size: cover;
+}
+.col{
+  float: left;
+  margin: 30px;
+  padding: 10px;
+}
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  h1{
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0;
+    padding: 150px 0px 0px 0px;
+  }
   .menu-expanded {
     transition: all .25s;
     text-align: center;
