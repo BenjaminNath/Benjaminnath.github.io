@@ -115,17 +115,6 @@ p {
 .bold {
   font-weight: 1000; }
 
-.fa {
-  color: #DFDFDF;
-  background-color: #343434;
-  border-color: #343434;
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
-  border-radius: 15%;
-  padding: 10px;
-  margin: 10px; }
-
 .row {
   display: inline-block; }
 
@@ -145,16 +134,79 @@ p {
 .slide {
   background-color: #4C6663;
   width: 100%;
-  height: 50%; }
+  height: 61%; }
+
+.portfolio {
+  background-color: #fff;
+  color: #000; }
+
+.bottom {
+  color: #fff;
+  background-color: #333;
+  width: 100%; }
+  .bottom p {
+    font-size: 16px;
+    float: left; }
+  .bottom li {
+    display: inline-block; }
+
+.skills {
+  position: relative;
+  height: 300px; }
+  .skills .skill_section {
+    background-color: #FFF;
+    float: left;
+    height: 340px;
+    width: 33.333333%; }
+    .skills .skill_section p {
+      padding: 20px 35px;
+      line-height: 30px;
+      font-size: 20px; }
+    .skills .skill_section h2 {
+      padding-top: 20px; }
+    .skills .skill_section i {
+      padding-top: 20px; }
+  .skills #mid {
+    background-color: #DFDFDF; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  max-width: 50%;
+  margin: 10px auto; }
+
+.aboutMe {
+  background-image: url(../img/views.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px; }
 
 .break {
   background: url(../img/code.jpeg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
+  .break .fa {
+    color: #DFDFDF;
+    background-color: #343434;
+    border-color: #343434;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 10px; }
 
 .col {
   float: left;
-  margin: 30px;
-  padding: 10px; }
+  margin: 40px 40px;
+  padding: 35px; }
+  .col p {
+    color: #fff;
+    position: fixed;
+    left: 0; }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
