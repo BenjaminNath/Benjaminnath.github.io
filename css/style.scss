@@ -2,6 +2,12 @@
 /* Variables */
 $iconBG: #343434;
 $icon: #DFDFDF;
+$frame: #4c4c4c;
+$screen: #555;
+$extra: #aaa;
+$browser: #fff;
+$browser-ui: darken($browser, 15%);
+
 
 /* Mixins */
 @mixin border-radius($radius) {
@@ -154,11 +160,29 @@ p {
   background-color: #4C6663;
   width: 100%;
   height: 61%;
+  z-index: 100;
 }
 .portfolio{
   background-color: #fff;
   color: #000;
 }
+.resume {
+  background-color: #173753;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  a{
+    color: #fff;
+    padding: 2% 42%;
+    text-decoration: none;
+    display: inline-block;
+    overflow-x: hidden;
+  }
+}
+.resume:hover{
+    background-color: #6DAEDB;
+}
+
 .bottom{
   color: #fff;
   background-color: #333;
@@ -169,6 +193,7 @@ p {
 .skills{
   position: relative;
   height: 300px;
+  z-index: 100;
   .skill_section{
     background-color: #FFF;
     float: left;
@@ -198,17 +223,20 @@ hr{
   background-position: center;
   color: #fff;
   padding: 50px;
+  position: relative;
+  z-index: 100;
 }
 footer{
+  z-index: 100;
   .connect{
-  list-style: none;
-  background-color: #333;
-  li{
-    display: inline-block;
-    margin: 10px;
-    padding-bottom: 10px;
+    list-style: none;
+    background-color: #333;
+    li{
+      display: inline-block;
+      margin: 10px;
+      padding-bottom: 10px;
+    }
   }
-}
 }
 .break{
   background: url(../img/code.jpeg);
@@ -234,13 +262,370 @@ footer{
   }
 }
 .panel {
-  height: 100%;
+  height: 50%;
   width: 100%;
 }
-.blue{background-color: blue;z-index: -5}
-.turqoise{background-color: red;z-index: -4}
-.green{background-color: green;z-index: -3}
-.bordeaux{background-color:orange;z-index: -2}
+.panelOne{
+  background-color: #fff;
+  z-index: 0;
+  h3{font-size: 36px;text-align: center;margin: 30px auto;z-index: 9999;}
+  .description{
+    margin-left: 35%;
+    padding: 100px;
+    h4{font-size: 26px;text-align: center;top: 0;padding: 20px;}
+    p{width: 100%; font-size: 24px;}
+  }
+}
+.panelTwo{
+  background-color: #fff;
+  z-index: 0;
+  h3{font-size: 36px;text-align: center;margin: 30px auto;z-index: 9999;}
+  .description{
+    width: 50%;
+    padding: 100px;
+    float: left;
+    h4{font-size: 26px;text-align: center;top: 0;padding: 20px;}
+    p{width: 100%; font-size: 24px;}
+  }
+}
+.panelThree{
+  background-color: #fff;
+  z-index: 0;
+  h3{font-size: 36px;text-align: center;margin: 30px auto;z-index: 9999;}
+  .description{
+    margin-left: 35%;
+    padding: 100px;
+    h4{font-size: 26px;text-align: center;top: 0;padding: 20px;}
+    p{width: 100%; font-size: 24px;}
+  }
+}
+.panelFour{
+  background-color: #fff;
+  z-index: 0;
+  h3{font-size: 36px;text-align: center;margin: 30px auto;z-index: 9999;}
+  .description{
+    width: 50%;
+    padding: 100px;
+    float: left;
+    h4{font-size: 26px;text-align: center;top: 0;padding: 20px;}
+    p{width: 100%; font-size: 24px;}
+  }
+}
+
+.turqoise{background-color: red;z-index: 0}
+.green{background-color: green;z-index: 0}
+.bordeaux{background-color:orange;z-index: 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.szene {
+  height: 240px;
+  margin: auto;
+  width: 80%;
+}
+
+.stage {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 200px;
+  float: left;
+}
+
+/***************************************
+ * All Devices
+ */
+
+.device {
+  position: absolute;
+  float: left;
+}
+
+.notebook { bottom: -30px; left: 0; }
+.ipad     { bottom: -50px; left: 350px; }
+.iphone   { bottom: -50px; left: 75px; }
+
+.screen {
+  position: relative;
+  margin: 13px auto 0;
+  border-radius: 2px;
+  background: $screen;
+  overflow: hidden;
+}
+
+.shadow {
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: -4%;
+  width: 108%;
+  height: 8px;
+  border-radius: 100%;
+}
+
+/***************************************
+ * Notebook
+ */
+
+.notebook {
+  width: 35%;
+  height: 185px;
+  border-radius: 10px 10px 0 0;
+  background: $frame;
+}
+
+.notebook:before {
+  top: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: $extra;
+}
+
+.notebook .screen {
+  width: 275px;
+  height: 160px;
+}
+
+.notebook .keyboard {
+  position: absolute;
+  top: 100%;
+  margin-left: -25px;
+  width: 350px;
+  height: 8px;
+  border-radius: 5px 5px 25px 25px;
+  background: #eaeaea;
+}
+
+.notebook .keyboard:after {
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 4px;
+  border-radius: 0 0 8px 8px;
+  background: #ccc;
+}
+
+/***************************************
+ * Tablet
+ */
+
+.ipad {
+  width: 110px;
+  height: 150px;
+  border-radius: 8px;
+  background: $frame;
+}
+
+.ipad:before {
+  top: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: $extra;
+}
+
+.ipad:after {
+  bottom: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border: 1px solid $extra;
+  border-radius: 50%;
+}
+
+.ipad .screen {
+  width: 100px;
+  height: 125px;
+}
+
+/***************************************
+ * Smartphone
+ */
+
+.iphone {
+  width: 150px;
+  height: 240px;
+  border-radius: 8px;
+  background: $frame;
+  float: right;
+  margin-left: 50%;
+}
+
+.iphone:before {
+  top: 6px;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  margin-left: -5px;
+  border-radius: 4px;
+  background: $extra;
+}
+
+.iphone:after {
+  bottom: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border: 1px solid $extra;
+  border-radius: 50%;
+}
+
+.iphone .screen{
+  width: 130px;
+  height:200px;
+}
+
+/***************************************
+ * Animation
+ */
+
+.animation {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background: $browser;
+  // transform: scale(.4,.4) translateX(500%);
+  // animation: 7s fly-in infinite;
+  // overflow: hidden;
+}
+
+@keyframes fly-in {
+    0% { transform: scale(.4,.4) translateX(500%);  }
+   10% { transform: scale(.4,.4) translateX(0);     }
+   20% { transform: scale(1,1)   translateX(0);     }
+   80% { transform: scale(1,1)   translateX(0);     }
+   90% { transform: scale(.4,.4) translateX(0);     }
+  100% { transform: scale(.4,.4) translateX(-500%); }
+}
+
+.browser {
+  height: 150px;
+  background: url(../img/JessieGames.png);
+  background-size: cover;
+  &:before {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+  }
+  &:after {
+    top: 5px;
+    right: 5px;
+    height: 5px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+  }
+}
+
+.content {
+  position: relative;
+  width: 80%;
+  height: 4px;
+  margin: 10% 0 0 10%;
+  background: $browser-ui;
+  box-shadow:
+    0 8px 0 $browser-ui,
+    0 16px 0 $browser-ui,
+    0 24px 0 $browser-ui,
+    0 32px 0 $browser-ui,
+    0 40px 0 $browser-ui,
+    0 48px 0 $browser-ui;
+  animation: 7s pop-in infinite;
+  &:after {
+    top: 48px;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: $browser;
+  }
+}
+
+.notebook .content:before {
+  width: 32px;
+  height: 28px;
+  border-right: 4px solid $browser;
+  background: $browser-ui;
+}
+
+.ipad .content:before {
+  width: 24px;
+  height: 20px;
+  border-right: 4px solid $browser;
+  background: $browser-ui;
+}
+
+@keyframes pop-in {
+    0% { transform: translateY(3000%); }
+   18% { transform: translateY(3000%); }
+   28% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+/***************************************
+ * Codepen Preview
+ */
+
+@media only screen and (height: 300px) {
+  .szene {
+    height: 200px;
+  }
+  .stage {
+    width: 100%;
+    transform: scale(.8,.8);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mobile */
 @media screen and (max-width: 480px) {
