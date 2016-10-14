@@ -184,6 +184,14 @@ hr {
   color: #fff;
   padding: 50px; }
 
+footer .connect {
+  list-style: none;
+  background-color: #333; }
+  footer .connect li {
+    display: inline-block;
+    margin: 10px;
+    padding-bottom: 10px; }
+
 .break {
   background: url(../img/code.jpeg);
   background-size: cover;
@@ -207,6 +215,26 @@ hr {
     color: #fff;
     position: fixed;
     left: 0; }
+
+.panel {
+  height: 100%;
+  width: 100%; }
+
+.blue {
+  background-color: blue;
+  z-index: -5; }
+
+.turqoise {
+  background-color: red;
+  z-index: -4; }
+
+.green {
+  background-color: green;
+  z-index: -3; }
+
+.bordeaux {
+  background-color: orange;
+  z-index: -2; }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
