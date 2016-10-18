@@ -1,44 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta chatset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Ben Nath">
-    <!--title -->
-    <title>Benjamin Nath | Web Developer</title>
+  <meta chatset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Ben Nath">
+  <!--title -->
+  <title>Benjamin Nath | Web Developer</title>
     
-    <!-- CSS files --> 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- CSS files --> 
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  </head>
-  <body>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="about.html">about me</a>
-      <a href="portfolio.html">portfolio</a>
-      <a href="contact.html">contact me</a>
-      <a href="https://drive.google.com/open?id=0B362pzEadJUsVjZCMk5EeVMwTHM">resume</a>
+</head>
+<body>
+  <div class="menu-collapsed">
+    <div class="bar"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://drive.google.com/file/d/0B362pzEadJUsVjZCMk5EeVMwTHM/view?usp=sharing">Resume</a></li>
+        <li><a href="mailto:nathb3210@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="intro" id="trigger1">
+    <div class="container text-center" id="pin">
+      <h1>Benjamin Nath</h1>
+      <h2>Web Developer // Pittsburgh</h2>
     </div>
+    <div id="pin"></div>
+  </div>
 
+    <section class="panel panelOne">
+      <h3 class="title">My Recent Work</h3>
+      <div class="work">
+        <div class="leftCol">
+          <img src="img/JessieGames.png" alt="The Jessie Games Home Page">
+        </div>
+          
+        <div class="rightCol">
+          <div class="description">
+            <h3><a href="https://thejessiegames.org/">The Jessie Games</a></h3>
+            <p>The Jessie Games is a site I developed with Wordpress for the organization. I also do volunteer work with them. Feel free to checkout the website and make a donation!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel panelTwo">
+      <div class="work">
+        <div class="leftCol">
+          <div class="description">
+            <h3><a href="https://github.com/BenjaminNath/Text-Em">Text 'Em</a></h3>
+            <p>Text 'Em is an app I developed last summer. It's a text messaging service that allows you to send and recieve messages. Built with Java and Android Studio. The source code is hosted <a href="https://github.com/BenjaminNath/Text-Em">here</a> on Github.</p>
+          </div>
+        </div>
+        <div class="rightCol" id="phone">
+          <img src="img/stockPhone.jpg" alt="Blank Text Messaging Service">
+        </div>
+      </div>
+    </section>
+    <section class="panel panelThree">
+      <div class="work">
+        <div class="leftCol">
+          <img src="img/clock.png" alt="Pomodoro Clock Mac">
+        </div>
+        <div class="rightCol">
+          <div class="description">
+            <h3><a href="http://s.codepen.io/benjaminnath/debug/XjmRXY">Pomodoro Clock</a></h3>
+            <p>I wanted to get an understanding for Angular.js so I decided to make this Pomodoro clock using the framework. Use it to time yourself for a certain lenfth before being able to take a break. The code is hosted <a href="https://github.com/BenjaminNath/pomodoro-Clock">here</a> on Github.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel panelFour">
+      <div class="leftCol">
+        <div class="description">
+          <h3><a href="http://s.codepen.io/benjaminnath/debug/XjmRXY">URL Shortened/Timestamp</a></h3>
+          <p>On my way to become a full stack developer, I decided to make a URL shortener and a Unix/human timestamp. Both accept arguments and will output either a shortened URL that will redirect to the original, or will give you the time as a natural or Unix timestamp. The URL shortener code is hosted <a href="https://github.com/BenjaminNath/url-shortener">here</a> on Github and the Timestamp code is <a href="https://github.com/BenjaminNath/Timestamp">here</a>. Both are made with a MEAN stack implementation.</p>
+        </div>
+      </div>
+      <div class="rightCol">
+        <img src="img/timestamp.jpg" alt="Timestamp index">
+      </div>
+    </section>
+  
+  <div class="resume">
+      <a href="https://drive.google.com/file/d/0B362pzEadJUsVjZCMk5EeVMwTHM/view?usp=sharing">View my Resume here!</a>
+  </div>
 
-    <div class="site bgimg" id="main">
-      <span id="toggleMenu" class="whiteFont" onclick="openNav()">&#9776;</span>
-
-      <h1 id="name">benjamin nath</h1>
-      <p id="occupation">web developer</p>
+  <div class="slide">
+    <div class="aboutMe" id="about">
+      <div class="container text-center">
+        <h4 class="title">Hi there!</h4>
+        <p id="meText">I'm Ben, a web/front-end developer who makes some cool sites. I'm currently based in Pittsburgh, PA.</p>
+      </div>
     </div>
+    <div class="skills text-center">
+      <div class="row">
+        <div class="skill_section">
+          <span>
+            <i class="fa fa-tablet fa-4x"></i>
+            <i class="fa fa-mobile fa-4x"></i>
+          </span>
+          <h2>Responsive Design</h2>  
+          <hr>
+          <p>Coupling aesthetic design and UX, I make sure to build the best possible experience for all devices.</p>
+        </div>
+        <div class="skill_section" id="mid">
+          <i class="fa fa-users fa-4x"></i>
+          <h2>Front-end Development</h2>
+          <hr>
+          <p>I work with server-side preprocessor, SASS, and client-side JavaScript frameworks to build clean applications with feasible UX.</p>
+        </div>
+        <div class="skill_section">
+          <i class="fa fa-database fa-4x"></i>
+          <h2>MEAN Stack</h2>
+          <hr>
+          <p>After working with mostly front-end developement, I have been teaching myself to implement a MEAN stack in order to become a more well-rounded developer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="break text-center">
+    <div class="row">
+        <div class="col">
+          <i class="fa fa-coffee fa-5x" aria-hidden="true"></i>
+          <p><span class="bold" id="coffeeCups"></span> cups of delicious coffee.</p>
+        </div>
+        <div class="col">
+          <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+          <p><span class="bold" id="bugsFixed"></span> bugs fixed with missing semi-colons.</p>
+        </div>
+        <div class="col">
+          <i class="fa fa-terminal fa-5x" aria-hidden="true"></i>
+          <p><span class="bold" id="codeLines"></span>+ lines of code written.</p>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <div class="footerLeft">
+      <p>&copy Benjamin Nath</p>
+    </div>
+    <ul class="connect">
+      <li><a href="https://github.com/BenjaminNath"><i class="fa fa-github fa-2x"></i></a></li>
+      <li><a href="http://codepen.io/benjaminnath/pens/public/"><i class="fa fa-codepen fa-2x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/benjaminnath"><i class="fa fa-linkedin fa-2x"></i></a></li>
+    </ul>
+  </footer>
 
     
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="script/myScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.rawgit.com/inorganik/countUp.js/master/countUp.js"></script>
+    <script src="script/myScript.js"></script>
   </body>
 </html>

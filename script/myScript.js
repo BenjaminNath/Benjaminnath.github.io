@@ -1,33 +1,24 @@
-$('#enterSite').click(function(){
-  $(this).parent().fadeOut(1000)
+$(".menu-collapsed").click(function() {
+  $(this).toggleClass("menu-expanded");
 });
 
-$('#name').hide().delay(1000).fadeIn(2000);
-$('#occupation').hide().delay(3000).fadeIn(2000);
+var coffee = new CountUp("coffeeCups", 0, 1528, 0, 5, options);
+var code = new CountUp("codeLines", 0, 100000, 0, 5, options);
+var bugs = new CountUp("bugsFixed", 0, 130, 0, 5, options);
 
-$('#wknd').hide().fadeIn(2000);
-$('#jgames').hide().delay(250).fadeIn(2000);
-$('#weather').hide().delay(500).fadeIn(2000);
-$('#wikiviewer').hide().delay(750).fadeIn(2000);
-$('#calculator').hide().delay(1000).fadeIn(2000);
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
 
+// Customizing a reveal set
+sr.reveal('.title', { duration: 2000 });
+sr.reveal('#meText', {duration: 2000 });
+sr.reveal('.col', { duration: 2000 });
+sr.reveal('.skill_section', {duration: 2000});
+sr.reveal('.work',{duration: 2000});
+coffee.start();
+code.start();
+bugs.start();
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  document.getElementById("toggleMenu").style.display = "none";
-  document.getElementById("portrait").style.left = "65%";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-  document.getElementById("toggleMenu").style.display = "initial";
-  document.getElementById("portrait").style.left = "50%";
-}
 
 //coffeeCups
 var options = {
@@ -39,5 +30,33 @@ var options = {
   suffic:''
 };
 
-var coffee = new CountUp("coffeeCups", 0, 1528, 0, 5, options);
-coffee.start();
+
+var controller = new ScrollMagic.Controller();
+
+$(document).ready(function(){
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400}).setPin("#pin").addTo(controller);
+});
+
+$(function () { // wait for document ready
+    // init
+    var controller2 = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 'onLeave'
+      }
+    });
+
+    // get all slides
+    var slides = document.querySelectorAll("section.panel");
+    // create scene for every slide
+    for (var i=0; i<slides.length; i++) {
+      if(slides[i] == 4){
+        new ScrollMagic.Scene({
+          triggerElement: slides[i]
+        }).setPin('.slide').addTo(controller2);
+      } else{
+          new ScrollMagic.Scene({
+            triggerElement: slides[i]
+          }).setPin(slides[i]).addTo(controller2);
+        }
+    }
+  });
