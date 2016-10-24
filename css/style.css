@@ -257,7 +257,7 @@ footer {
     left: 0; }
 
 .panel {
-  height: 50%;
+  height: 55%;
   width: 100%; }
   .panel a {
     color: #2F97C1; }
@@ -411,6 +411,47 @@ footer {
     bottom: -145%;
     position: relative; }
     footer ul.connect {
-      margin: 0px; } }
+      margin: 0px; }
+
+  .resume a {
+    width: 100%;
+    padding: 15px 0px; } }
+@media screen and (max-width: 321px) {
+  h1 {
+    line-height: 30px;
+    font-size: 35px; }
+
+  .intro {
+    height: 110%;
+    width: 100%; }
+    .intro h2 {
+      font-size: 16px; }
+
+  .skills .skill_section {
+    font-size: 10px; }
+
+  .break {
+    top: 190%;
+    position: relative; }
+
+  .col p {
+    font-size: 12px; }
+
+  footer {
+    bottom: -190%; }
+
+  .description h3 {
+    font-size: 14px; }
+
+  .resume a {
+    width: 100%;
+    padding: 15px 0px; } }
+@media screen and (max-width: 361px) {
+  .skills .skill_section {
+    font-size: 10px; }
+
+  .resume a {
+    width: 100%;
+    padding: 15px 0px; } }
 
 /*# sourceMappingURL=style.css.map */
