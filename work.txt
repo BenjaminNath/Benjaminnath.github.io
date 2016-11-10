@@ -1,0 +1,43 @@
+The Jessie Games is a site I developed with Wordpress for the organization. I also do volunteer work with them. Feel free to checkout the website and make a donation!
+
+Text 'Em is an app I developed last summer. It's a text messaging service that allows you to send and recieve messages. Built with Java and Android Studio. The source code is hosted <a href="https://github.com/BenjaminNath/Text-Em">here</a> on Github.</p>
+
+I wanted to get an understanding for Angular.js so I decided to make this Pomodoro clock using the framework. Use it to time yourself for a certain lenfth before being able to take a break. The code is hosted <a href="https://github.com/BenjaminNath/pomodoro-Clock">here</a> on Github.</p>
+
+On my way to become a full stack developer, I decided to make a URL shortener and a Unix/human timestamp. Both accept arguments and will output either a shortened URL that will redirect to the original, or will give you the time as a natural or Unix timestamp. The URL shortener code is hosted <a href="https://github.com/BenjaminNath/url-shortener">here</a> on Github and the Timestamp code is <a href="https://github.com/BenjaminNath/Timestamp">here</a>. Both are made with a MEAN stack implementation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightCol text-center">
+        <h3>My Work</h3>
+        <div id="jgames" class="work">
+          <h6>Jessie Games</h6>
+          <p>The Jessie Games is a site I developed with Wordpress for the organization. I also do volunteer work with them. Feel free to checkout the website and make a donation!</p>
+        </div>
+        <div id="weather" class="work">
+          <h6>weather</h6>
+          <p>Text 'Em is an app I developed last summer. It's a text messaging service that allows you to send and recieve messages. Built with Java and Android Studio. The source code is hosted <a href="https://github.com/BenjaminNath/Text-Em">here</a> on Github.</p></p>
+        </div>
+        <div id="clock" class="work">
+          <h6>clock</h6> 
+          <p>I wanted to get an understanding for Angular.js so I decided to make this Pomodoro clock using the framework. Use it to time yourself for a certain lenfth before being able to take a break. The code is hosted <a href="https://github.com/BenjaminNath/pomodoro-Clock">here</a> on Github.</p></p>
+        </div>
+        <div id="random" class="work">
+          <h6>random</h6>
+          <p>On my way to become a full stack developer, I decided to make a URL shortener and a Unix/human timestamp. Both accept arguments and will output either a shortened URL that will redirect to the original, or will give you the time as a natural or Unix timestamp. The URL shortener code is hosted <a href="https://github.com/BenjaminNath/url-shortener">here</a> on Github and the Timestamp code is <a href="https://github.com/BenjaminNath/Timestamp">here</a>. Both are made with a MEAN stack implementation.</p>
+        </div>
+      </div>

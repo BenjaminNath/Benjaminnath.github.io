@@ -134,7 +134,8 @@ p {
 .title {
   font-size: 50px;
   line-height: 50px;
-  padding: 10px; }
+  padding: 10px;
+  margin: 20px 0px; }
 
 .slide {
   background-color: #4C6663;
@@ -144,12 +145,20 @@ p {
 
 .portfolio {
   background-color: #fff;
+  height: 1000px;
   color: #000; }
+  .portfolio img {
+    height: 50%;
+    width: 30%; }
+  .portfolio .work {
+    line-height: 20px;
+    margin: 100px 0px; }
+    .portfolio .work h6 {
+      font-size: 30px;
+      margin: 15px; }
 
 .resume {
   background-color: #173753;
-  position: relative;
-  z-index: 100;
   text-align: center; }
   .resume a {
     color: #fff;
@@ -256,34 +265,6 @@ footer {
     position: fixed;
     left: 0; }
 
-.panel {
-  height: 55%;
-  width: 100%; }
-  .panel a {
-    color: #2F97C1; }
-  .panel a:hover {
-    color: #224870; }
-
-.panelOne {
-  background-color: #fff;
-  z-index: 0; }
-  .panelOne .title {
-    font-size: 30px;
-    text-align: center;
-    margin: 30px auto; }
-
-.panelTwo {
-  background-color: #fff;
-  z-index: 0; }
-
-.panelThree {
-  background-color: #fff;
-  z-index: 0; }
-
-.panelFour {
-  background-color: #fff;
-  z-index: 0; }
-
 .leftCol {
   width: 50%;
   float: left; }
@@ -293,9 +274,6 @@ footer {
 
 .rightCol {
   margin-left: 50%; }
-  .rightCol img {
-    width: 55%;
-    padding-left: 100px; }
 
 .description {
   padding: 50px 75px; }
@@ -355,18 +333,6 @@ footer {
         transition: all .15s;
         letter-spacing: 2px;
         border: 1px solid rgba(255, 255, 255, 0.15); }
-
-  .leftCol {
-    padding: 10px 0 0 10px; }
-    .leftCol img {
-      width: 80%;
-      padding: 0px; }
-
-  .rightCol {
-    padding: 10px 0 0 10px; }
-    .rightCol img {
-      width: 80%;
-      padding: 60px 0px 0px 20px; }
 
   .description {
     padding: 0; }
