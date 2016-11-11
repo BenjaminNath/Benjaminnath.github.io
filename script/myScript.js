@@ -34,5 +34,8 @@ var portController = new ScrollMagic.Controller();
 
 $(document).ready(function(){
   var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400}).setPin("#pin1").addTo(controller);
-  var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 800}).setPin("#pin2").addTo(portController);
+  var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800}).setPin("#pin2").addTo(portController);
+  var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
+                          .setClassToggle("#animate", "weather")
+                          .addTo(portController);
 });

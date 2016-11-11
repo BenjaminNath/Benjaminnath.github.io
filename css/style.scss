@@ -170,20 +170,43 @@ p {
 }
 .portfolio{
   background-color: #fff;
-  height: 1000px;
   color: #000;
   img{
     height: 50%;
-    width: 30%;
+    width: 75%;
   }
   .work{
     line-height: 20px;
-    margin: 100px 0px;
+    margin: 500px 0px;
     h6{
       font-size: 30px;
       margin: 15px;
     }
   }
+}
+#animate{
+  transition: background-image 0.3s ease-in-out;
+}
+#jgames{
+  margin: 0px;
+}
+.weather{
+  background-image: url(../img/code.jpeg);
+  height: 418px;
+  width: 500px;
+}
+#random{
+  margin-bottom: 200px;
+}
+#imac{
+  background-image: url(../img/imac.jpg);
+  height: 418px;
+  width: 500px;
+}
+#trigger2{
+  top:200px;
+  position: relative;
+  bottom: 0;
 }
 .resume {
   background-color: $ResumeBG;
@@ -291,7 +314,6 @@ footer{
 .leftCol{
   width: 50%;
   float: left;
-  img{padding-left: 100px;width: 55%;}
 }
 .rightCol{
   margin-left: 50%;
