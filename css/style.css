@@ -16,6 +16,7 @@ body {
 
 .container {
   width: 80%;
+  height: 100%;
   margin: 0 auto; }
 
 .text-center {
@@ -139,28 +140,33 @@ p {
 
 .portfolio {
   background-color: #fff;
+  height: 275%;
   color: #000; }
   .portfolio img {
     height: 50%;
     width: 75%; }
   .portfolio .work {
     line-height: 20px;
-    margin: 500px 0px; }
+    margin: 500px 0px;
+    height: 100%; }
     .portfolio .work h6 {
       font-size: 30px;
       margin: 15px; }
 
+#top {
+  margin-top: 100px; }
+
+#bottom {
+  margin-bottom: 150px; }
+
 .slide {
-  position: relative;
+  position: absolute;
   width: 615px;
   left: 20px;
   top: 20px;
   background-image: url(http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Birds/A-G/emperor-penguin-group-snow.jpg); }
   .slide .current {
     opacity: 1; }
-
-#animate {
-  transition: background-image 0.3s ease-in-out; }
 
 #jgames {
   background-image: url(../img/jgames.png);
@@ -170,22 +176,32 @@ p {
   background-repeat: no-repeat;
   z-index: 5; }
 
-#weather {
+#clock {
+  background-image: url(../img/clock.png);
+  background-color: #000;
+  width: 460px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center center;
   z-index: 4; }
 
-#clock {
+#wiki {
+  background-image: url(../img/wiki.png);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 460px;
+  height: 260px;
   z-index: 3; }
 
 #random {
-  z-index: 2; }
-
-.weather {
   background-image: url(../img/code.jpeg);
-  height: 418px;
-  width: 500px; }
-
-#random {
-  margin-bottom: 200px; }
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 460px;
+  height: 260px;
+  z-index: 2; }
 
 #imac {
   background-image: url(../img/imac.jpg);
