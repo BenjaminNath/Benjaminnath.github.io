@@ -4,13 +4,14 @@ $(".menu-collapsed").click(function() {
 
 var target = $('div.slide');
 var targetHeight = target.outerHeight();
-var containerHeight = $('.portfolio').outerHeight();
+var containerHeight = $('.rightCol').height();
+
 
 var maxScroll = containerHeight - targetHeight;
 var scrollRange = maxScroll/(target.length-1);
 
 $(document).scroll(function(e){
-  var scrollY = $(window).scrollTop();
+  var scrollY = $(document).scrollTop();
   var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
   var divIndex = Math.floor(scrollY/scrollRange);
 
@@ -18,6 +19,24 @@ $(document).scroll(function(e){
   target.eq(divIndex).css('opacity', scrollPercent);
   target.has(':gt(' + divIndex + ')').css('opacity', 1);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var coffee = new CountUp("coffeeCups", 0, 1528, 0, 5, options);
 var code = new CountUp("codeLines", 0, 100000, 0, 5, options);
@@ -55,4 +74,20 @@ $(document).ready(function(){
   var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
                           .setClassToggle("#animate", "weather")
                           .addTo(portController);
+});
+
+$(function() {
+  var scrollMagicController = new ScrollMagic();
+
+  var tween1 = TweenMax.to('#animation-1', 0.3. {
+    backgroundImage: '../img/jgames.png'
+  });
+  var scene1 = new ScrollScene({
+    triggerElement: '#jgames',
+    offset: 50
+  })
+  .setClassToggle('body', 'scene-1-active')
+  .setTween(tween1);
+  addTo(scrollMagicController);
+
 });
