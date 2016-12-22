@@ -2,39 +2,56 @@ $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
 });
 
-var target = $('div.slide');
-var targetHeight = target.outerHeight();
-var containerHeight = $('.rightCol').height();
+// var target = $('div.slide');
+// var targetHeight = target.outerHeight();
+// var containerHeight = $('.rightCol').height();
 
 
-var maxScroll = containerHeight - targetHeight;
-var scrollRange = maxScroll/(target.length-1);
+// var maxScroll = containerHeight - targetHeight;
+// var scrollRange = maxScroll/(target.length-1);
 
-$(document).scroll(function(e){
-  var scrollY = $(document).scrollTop();
-  var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
-  var divIndex = Math.floor(scrollY/scrollRange);
+// $(document).scroll(function(e){
+//   var scrollY = $(document).scrollTop();
+//   var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
+//   var divIndex = Math.floor(scrollY/scrollRange);
 
-  target.has(':lt(' + divIndex + ')').css('opacity', 0);
-  target.eq(divIndex).css('opacity', scrollPercent);
-  target.has(':gt(' + divIndex + ')').css('opacity', 1);
+//   target.has(':lt(' + divIndex + ')').css('opacity', 0);
+//   target.eq(divIndex).css('opacity', scrollPercent);
+//   target.has(':gt(' + divIndex + ')').css('opacity', 1);
+// });
+
+
+// $( window ).ready(function() {
+  
+//     var wHeight = $(window).height();
+
+//     $('.slide')
+//       .height(wHeight)
+//       .scrollie({
+//         scrollOffset : -50,
+//         scrollingInView : function(elem) {
+                   
+//           var bgColor = elem.data('background');
+          
+//           $('#imacBG').css('background-image', bgColor);
+          
+//         }
+//       });
+
+//   });
+
+$(document).ready(function () {
+    var scroll_pos = 0;
+    $("#slide").scroll(function () {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 210) {
+            $("#slide").css('background-color', '#1A1A1A');
+        } else {
+            $("#slide").css('background-color', 'red');
+        }
+        console.log(scroll_pos);
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -74,20 +91,4 @@ $(document).ready(function(){
   var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
                           .setClassToggle("#animate", "weather")
                           .addTo(portController);
-});
-
-$(function() {
-  var scrollMagicController = new ScrollMagic();
-
-  var tween1 = TweenMax.to('#animation-1', 0.3. {
-    backgroundImage: '../img/jgames.png'
-  });
-  var scene1 = new ScrollScene({
-    triggerElement: '#jgames',
-    offset: 50
-  })
-  .setClassToggle('body', 'scene-1-active')
-  .setTween(tween1);
-  addTo(scrollMagicController);
-
 });
