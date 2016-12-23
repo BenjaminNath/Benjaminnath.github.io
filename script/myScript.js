@@ -7,7 +7,7 @@ var code = new CountUp("codeLines", 0, 100000, 0, 5, options);
 var bugs = new CountUp("bugsFixed", 0, 130, 0, 5, options);
 
 // Changing the defaults
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 
 // Customizing a reveal set
 sr.reveal('.title', { duration: 2000 });
@@ -34,7 +34,15 @@ var options = {
 var controller = new ScrollMagic.Controller();
 
 $(document).ready(function(){
-  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400}).setPin("#pin").addTo(controller);
+  //var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400}).setPin("#pin").addTo(controller);
+
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 200}).setPin("#pin").addTo(controller);  
+    console.log('is this working on firefox');  
+  } else {
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500}).setPin("#pin").addTo(controller);
+  }
+
 });
 
 $(function () { // wait for document ready
