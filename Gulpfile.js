@@ -5,17 +5,17 @@ var cleanCSS = require('gulp-clean-css');
 
 
 gulp.task('styles', function() {
-  gulp.src('public/stylesheets/*.scss')
+  gulp.src('css/*.scss')
 	  .pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('public/stylesheets/'));
 });
 
 gulp.task('cleanCSS', function(){
-  gulp.src('public/sylesheets/*.css')
+  gulp.src('css/*.css')
 	  .pipe(cleanCSS())
 		.pipe(gulp.dest('public/stylesheets/'));
 });
 
 gulp.task('default', function(){
-  gulp.watch('public/stylesheets/*.scss', ['styles']); 
+  gulp.watch('css/*.scss', ['styles']); 
 });

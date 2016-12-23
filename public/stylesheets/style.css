@@ -170,24 +170,21 @@ p {
     opacity: 1; }
 
 #imacBG {
-  height: 300px;
-  width: 400px;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   transition: all 300ms ease; }
 
-.imac .scene-1-active {
-  background: url(../img/jgames.png) !important;
-  z-index: 1; }
-.imac .scene-2-active {
-  background: url(../img/wiki.png) !important;
-  z-index: 2; }
-.imac .scene-3-active {
-  background: url(../img/clock.png) !important;
-  z-index: 3; }
-.imac .scene-4-active {
-  background: url(../img/views.jpg) !important;
-  z-index: 4; }
+#imacBG #scene-1-active {
+  background-image: url("../img/jgames.png"); }
+
+#imacBG #scene-2-active {
+  background-image: url("../img/wiki.png"); }
+
+#imacBG #scene-3-active {
+  background-image: url("../img/clock.png"); }
+
+#imacBG #scene-4-active {
+  background-image: url("../img/views.jpg"); }
 
 #random {
   background-image: url(../img/code.jpeg);
@@ -342,10 +339,8 @@ footer {
     font-size: 40px;
     margin: 0;
     padding: 150px 0px 10px 0px; }
-
   .intro h2 {
     font-size: 18px; }
-
   .menu-expanded {
     transition: all .25s;
     text-align: center;
@@ -377,7 +372,6 @@ footer {
         transition: all .15s;
         letter-spacing: 2px;
         border: 1px solid rgba(255, 255, 255, 0.15); }
-
   .description {
     padding: 0; }
     .description h3 {
@@ -388,24 +382,20 @@ footer {
       line-height: 15px;
       text-align: center;
       padding: 5px 0px; }
-
   #phone img {
     width: 30%;
     padding: 15% 25%; }
-
   .skills .skill_section {
     width: 100%;
     float: none;
     margin: 0;
     padding: 0px; }
-
   .col {
     margin: 15px 0px;
     padding: 0;
     width: 33%; }
     .col p {
       font-size: 16px; }
-
   .break {
     position: relative;
     top: 145%;
@@ -413,55 +403,44 @@ footer {
     height: 25%; }
     .break .fa-5x {
       font-size: 16px; }
-
   .row {
     width: 100%; }
-
   footer {
     bottom: -145%;
     position: relative; }
     footer ul.connect {
       margin: 0px; }
-
   .resume a {
     width: 100%;
     padding: 15px 0px; } }
+
 @media screen and (max-width: 321px) {
   h1 {
     line-height: 30px;
     font-size: 35px; }
-
   .intro {
     height: 110%;
     width: 100%; }
     .intro h2 {
       font-size: 16px; }
-
   .skills .skill_section {
     font-size: 10px; }
-
   .break {
     top: 190%;
     position: relative; }
-
   .col p {
     font-size: 12px; }
-
   footer {
     bottom: -190%; }
-
   .description h3 {
     font-size: 14px; }
-
   .resume a {
     width: 100%;
     padding: 15px 0px; } }
+
 @media screen and (max-width: 361px) {
   .skills .skill_section {
     font-size: 10px; }
-
   .resume a {
     width: 100%;
     padding: 15px 0px; } }
-
-/*# sourceMappingURL=style.css.map */

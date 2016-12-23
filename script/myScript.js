@@ -2,43 +2,6 @@ $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
 });
 
-// var target = $('div.slide');
-// var targetHeight = target.outerHeight();
-// var containerHeight = $('.rightCol').height();
-
-
-// var maxScroll = containerHeight - targetHeight;
-// var scrollRange = maxScroll/(target.length-1);
-
-// $(document).scroll(function(e){
-//   var scrollY = $(document).scrollTop();
-//   var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
-//   var divIndex = Math.floor(scrollY/scrollRange);
-
-//   target.has(':lt(' + divIndex + ')').css('opacity', 0);
-//   target.eq(divIndex).css('opacity', scrollPercent);
-//   target.has(':gt(' + divIndex + ')').css('opacity', 1);
-// });
-
-
-// $( window ).ready(function() {
-  
-//     var wHeight = $(window).height();
-
-//     $('.slide')
-//       .height(wHeight)
-//       .scrollie({
-//         scrollOffset : -50,
-//         scrollingInView : function(elem) {
-                   
-//           var bgColor = elem.data('background');
-          
-//           $('#imacBG').css('background-image', bgColor);
-          
-//         }
-//       });
-
-//   });
 
 $(document).ready(function () {
     var scroll_pos = 0;
@@ -84,6 +47,7 @@ var options = {
 
 var controller = new ScrollMagic.Controller();
 var portController = new ScrollMagic.Controller();
+var scrollMagicController = new ScrollMagic.Controller();
 
 $(document).ready(function(){
 
@@ -94,8 +58,35 @@ $(document).ready(function(){
     var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500}).setPin("#pin1").addTo(controller);
   }
 
-  // var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800}).setPin("#pin2").addTo(portController);
-  // var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
-  //                         .setClassToggle("#animate", "weather")
-  //                         .addTo(portController);
+  var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1700}).setPin("#pin2").addTo(portController);
+
+
+  var scene1 = new ScrollMagic.Scene({
+    triggerElement: '#scene-1',
+    offset: 50
+  })
+  .setClassToggle('.imac', 'scene-1-active')
+  .addTo(scrollMagicController);
+
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#scene-2',
+    offset: 50
+  })
+  .setClassToggle('.imac', 'scene-2-active')
+  .addTo(scrollMagicController);
+
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: '#scene-3',
+    offset: 50
+  })
+  .setClassToggle('.imac', 'scene-3-active')
+  .addTo(scrollMagicController);
+
+  var scene4 = new ScrollMagic.Scene({
+    triggerElement: '#scene-4',
+    offset: 50
+  })
+  .setClassToggle('.imac', 'scene-4-active')
+  .addTo(scrollMagicController);
+
 });
