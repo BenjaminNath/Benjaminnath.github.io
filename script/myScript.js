@@ -86,9 +86,16 @@ var controller = new ScrollMagic.Controller();
 var portController = new ScrollMagic.Controller();
 
 $(document).ready(function(){
-  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400}).setPin("#pin1").addTo(controller);
-  var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800}).setPin("#pin2").addTo(portController);
-  var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
-                          .setClassToggle("#animate", "weather")
-                          .addTo(portController);
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 200}).setPin("#pin1").addTo(controller);  
+    console.log('is this working on firefox');  
+  } else {
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500}).setPin("#pin1").addTo(controller);
+  }
+
+  // var portfolioScene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800}).setPin("#pin2").addTo(portController);
+  // var weatherScene = new ScrollMagic.Scene({triggerElement: "#weatherTrigger"})
+  //                         .setClassToggle("#animate", "weather")
+  //                         .addTo(portController);
 });
