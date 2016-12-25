@@ -65,28 +65,28 @@ $(document).ready(function(){
     triggerElement: '#scene-1',
     offset: 50
   })
-  .setClassToggle('.imac', 'scene-1-active')
+  .setClassToggle('.imacBg', 'scene-1-active')
   .addTo(scrollMagicController);
 
   var scene2 = new ScrollMagic.Scene({
     triggerElement: '#scene-2',
     offset: 50
   })
-  .setClassToggle('.imac', 'scene-2-active')
+  .setClassToggle('.imacBg', 'scene-2-active')
   .addTo(scrollMagicController);
 
   var scene3 = new ScrollMagic.Scene({
     triggerElement: '#scene-3',
     offset: 50
   })
-  .setClassToggle('.imac', 'scene-3-active')
+  .setClassToggle('.imacBg', 'scene-3-active')
   .addTo(scrollMagicController);
 
   var scene4 = new ScrollMagic.Scene({
     triggerElement: '#scene-4',
     offset: 50
   })
-  .setClassToggle('.imac', 'scene-4-active')
+  .setClassToggle('.imacBg', 'scene-4-active')
   .addTo(scrollMagicController);
 
 });

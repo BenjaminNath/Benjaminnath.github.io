@@ -7,13 +7,13 @@ var cleanCSS = require('gulp-clean-css');
 gulp.task('styles', function() {
   gulp.src('css/*.scss')
 	  .pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('public/stylesheets/'));
+		.pipe(gulp.dest('css/'));
 });
 
 gulp.task('cleanCSS', function(){
   gulp.src('css/*.css')
 	  .pipe(cleanCSS())
-		.pipe(gulp.dest('public/stylesheets/'));
+		.pipe(gulp.dest('css/'));
 });
 
 gulp.task('default', function(){
